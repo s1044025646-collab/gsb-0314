@@ -1,0 +1,11 @@
+{
+  "name": "rotation",
+  "L": 1.0,
+  "m": 1.0,
+  "g": 9.81,
+  "theta0": 0.0,
+  "omega0": 6.5,
+  "dt": 0.005,
+  "totalSteps": 2000,
+  "sampleInterval": 50
+}

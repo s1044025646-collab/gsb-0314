@@ -1,0 +1,21 @@
+{
+  "name": "pendulum-verlet-backend",
+  "version": "1.0.0",
+  "description": "无阻尼单摆速度 Verlet 步进与能量误差核验后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "main": "dist/src/cli.js",
+  "bin": {
+    "pendulum": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\"",
+    "start": "node --no-warnings dist/src/server.js",
+    "cli": "node --no-warnings dist/src/cli.js",
+    "demo": "node --no-warnings scripts/demo.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.6.0"
+  }
+}
