@@ -1,0 +1,23 @@
+{
+  "name": "pendulum-verlet-backend",
+  "version": "1.0.0",
+  "description": "Windows 本地无阻尼单摆速度 Verlet 步进与能量误差核验后端",
+  "type": "module",
+  "bin": {
+    "pendulum": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "start": "node dist/server.js",
+    "test": "node --test --test-concurrency=1 \"dist-test/**/*.test.js\"",
+    "demo": "pwsh -ExecutionPolicy Bypass -File ./scripts/demo.ps1"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}

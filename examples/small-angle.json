@@ -1,0 +1,10 @@
+{
+  "length": 1,
+  "mass": 1,
+  "gravity": 9.81,
+  "initialAngle": 0.1,
+  "initialAngularVelocity": 0,
+  "timeStep": 0.001,
+  "targetSteps": 6283,
+  "sampleInterval": 100
+}
